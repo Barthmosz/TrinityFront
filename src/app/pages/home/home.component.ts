@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { ProductService } from 'src/app/services/product.service';
 
 @Component({
     selector: 'app-home',
@@ -6,9 +7,13 @@ import { Component } from '@angular/core';
     styleUrls: ['./home.component.scss']
 })
 export class HomeComponent {
-    public products: any[];
+    public products: any[] = [];
 
-    constructor() {
-        this.products = ['1', '2', '3'];
+    constructor(private productService: ProductService) {
+        this.productService.GetAllProducts().subscribe({
+            next: (response: any) => {
+                this.products = response['data'];
+            }
+        });
     }
 }
