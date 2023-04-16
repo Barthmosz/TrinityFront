@@ -1,6 +1,6 @@
-<p>This is a Product Card</p>
+<div class="container" *ngFor="let product of products">
+    <h1>{{ product['name'] }}</h1>
+    <img src="{{ product['imageUrl']}}" alt="A notebook" />
+    <p>R${{ product['price'] }}</p>
+</div>
 
-<li *ngFor="let item of products">
-    {{ item['name'] }}
-    {{ item['price'] }}
-</li>

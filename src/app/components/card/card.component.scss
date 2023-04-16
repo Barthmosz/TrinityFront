@@ -1,0 +1,16 @@
+.container {
+    border: 5px solid red;
+    margin: 1em;
+    padding: 1em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 164px;
+    width: 164px;
+
+    img {
+        width: 128px;
+        height: 128px;
+    }
+}
