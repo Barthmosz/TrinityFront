@@ -1,11 +1,9 @@
 .container {
     width: 80vw;
-    padding: 1em;
-    display: flex;
-    border: 5px solid blue;
 }
 
 .product-card {
-    display: flex;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 20em);
+    grid-gap: 10px;
 }
