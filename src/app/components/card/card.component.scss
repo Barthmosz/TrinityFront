@@ -1,16 +1,22 @@
 .container {
-    border: 5px solid red;
-    margin: 1em;
-    padding: 1em;
+    margin: 1.5em;
+    padding: 1.5em;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
-    height: 164px;
-    width: 164px;
+    border: 1px solid #4d4685;
+    height: 300px;
+    width: 300px;
 
     img {
         width: 128px;
         height: 128px;
+    }
+
+    &:hover {
+        cursor: pointer;
+        transform: scale(1.005);
+        transition: all ease-in-out 0.2s;
     }
 }
